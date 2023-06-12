@@ -19,8 +19,8 @@ public class UniversityCreator {
         return university;
     }
 
-    public static void main(String[] args) {
-        createUniversity("faculty", StudentCreator.createStudent("firstName", "lastName", "patronymic",
+    public static University run() {
+        return createUniversity("faculty", StudentCreator.createStudent("firstName", "lastName", "patronymic",
                 Sex.MALE), List.of(FacultyCreator.run(), FacultyCreator.run(), FacultyCreator.run()));
     }
 }
